@@ -1,0 +1,136 @@
+
+body {
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: 'Inter', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 0.6rem;
+}
+
+::-webkit-scrollbar-track {
+    background: #262931;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #00E4AF;
+    border-radius: 20px;
+}
+
+:root{
+    --cor-principal: #00E4AF;
+}
+
+#app {
+    max-width: 436px;
+    font-size: 1.6rem;
+    margin: 4rem auto 0;
+}
+
+.header{
+    background-color: #262931;
+    text-align: center;
+}
+
+.header h1 {
+    margin: 0;
+    padding: 3rem 0;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color:var(--cor-principal);
+}
+
+.sectionHoras {
+    background-color: #2E3039;
+    color: var(--cor-principal);
+    padding: 2.5rem 5.5rem;
+}
+
+.relogio {
+    height: 9.56rem;
+    width: 13.5rem;
+    background-color: #3a3e49;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.hora {
+    text-align: center;
+    padding: 1.5rem 0 1rem;
+    font-size: 2.5rem ;
+}
+
+.data {
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+.tarefas {
+    height: 20rem;
+    background-color:#2E3039;
+    color: #FFFFFF;
+    padding: 1.87rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    overflow-y: scroll;
+}
+
+.tarefa {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: solid 1px #FFFFFF;
+    border-radius: 10px;
+    padding: 1.37rem;
+}
+
+.tarefa p {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.tarefa i {
+    cursor: pointer;
+    transition: color 400ms ease-in-out;
+}
+
+.tarefa i:hover {
+    color: red;
+}
+
+.form {
+    height: 4rem;
+    width: 100%;
+}
+
+.form form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.form input {
+    background: #FFFFFF;
+    height: 100%;
+    width: 80%;
+    outline: none;
+    border: none;
+    padding: 0 2rem;
+}
+
+.form button {
+    background-color: var(--cor-principal);
+    height: 100%;
+    width: 20%;
+    border: none;
+    cursor: pointer;
+}

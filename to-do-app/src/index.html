@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="./styles/index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https: //fonts.googleapis.com/css2?family= Inter:wght@400;700 & display =swap" rel="stylesheet">
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    <title>To-Do App</title>
+  </head>
+  <body>
+    <div id="app">
+      <header class="header">
+        <h1>todo app</h1>
+      </header>
+
+      <section class="sectionHoras">
+        <div class="relogio">
+
+          <div class="hora">
+            <span>12:38</span>
+          </div>
+
+          <div class="data">
+            <span>Segunda, 04 Jun</span>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="tarefas"></section>
+
+      <footer>
+        <div class="form">
+          <form>
+            <input type="text" placeholder="insira sua tarefa aqui">
+            <button>
+            <i class="ph-plus"></i>
+            </button>
+          </form>
+        </div>
+      </footer>
+    </div>
+    <script type="module" src="./app/index.js"></script>
+  </body>
+</html>
