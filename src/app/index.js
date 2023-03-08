@@ -8,7 +8,6 @@ const gerarRelogio = _ => {
   return `${formatarTempo(hora)}:${formatarTempo(minuto)}:${formatarTempo(segundo)}`
 }
 
-
 const atualizarRelogio = _ => {
   const hora = document.querySelector('.hora')
 
@@ -19,13 +18,14 @@ const atualizarRelogio = _ => {
 
 
 const gerarData = _ => {
-  const data = new Date()
-  const dia = data.toString().split(' ')[0]
-  const mes = data.toString().split(' ')[1]
-  const dataAtual = data.toString().split(' ')[2]
+  const data = new Date().toString().split(' ')
+  const dia = data[0]
+  const mes = data[1]
+  const dataAtual = data[2]
 
   return `${dia}, ${dataAtual} ${mes}`
 }
+
 
 const atualizarData = _ => {
   const data = document.querySelector('.data')
